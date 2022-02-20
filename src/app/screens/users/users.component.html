@@ -1,0 +1,25 @@
+<app-table [items]="users">
+
+    <th column>ID</th>
+    <th column>Username</th>
+    <th column>First Name</th>
+    <th column>Last Name</th>
+    <th column>Date Joined</th>
+    <th column>Email</th>
+    <th column>Phone</th>
+    <th column>Last Login</th>
+    <th column>Verified</th>
+
+    <ng-template #contentRow let-item>
+        <td>{{item.id}}</td>
+        <td>{{item.username}}</td>
+        <td>{{item.first_name}}</td>
+        <td>{{item.last_name}}</td>
+        <td>{{item.date_joined}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.phone}}</td>
+        <td>{{item.last_login}}</td>
+        <td>{{item.is_verified}}</td>
+    </ng-template>
+
+</app-table>

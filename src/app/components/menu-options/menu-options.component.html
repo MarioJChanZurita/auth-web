@@ -1,0 +1,25 @@
+
+<button 
+    mat-icon-button 
+    [matMenuTriggerFor]="options" 
+    class="button is-white"
+>
+    <mat-icon>more_horiz</mat-icon>
+</button>
+
+<mat-menu #options class="mat-menu">
+    <ul>
+        <li mat-menu-item>
+            <mat-icon>dialpad</mat-icon>
+            <span class="is-size-6">More</span>
+        </li>
+        <li mat-menu-item>
+            <mat-icon>dialpad</mat-icon>
+            <span>Edit</span>
+        </li>
+        <li mat-menu-item>
+            <mat-icon>dialpad</mat-icon>
+            <span>Delete</span>
+        </li>
+    </ul>
+</mat-menu>
